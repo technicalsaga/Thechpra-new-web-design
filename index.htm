@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+   background-image: url("download (1).jpg");
+  height: 100%; 
+  background-position: center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {
+   position:fixed;
+    top: 0%; 
+    left:30%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  border: 1px solid #555;
+  top:30px;
+  left:10px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration:wavy;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+
+li a:hover:not(.active) {
+  background-color:#555 ;
+  color: white;
+}
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: centre;
+	padding: 14px 16px;
+	text-decoration: none;
+  cursor:pointer;
+}
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+}
+li .dropdown {
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 3;
+	cursor:pointer;
+	 overflow-y: auto;
+	 width: 200px;
+  height: 130px;
+}
+.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		 overflow-y: auto;
+}
+.dropdown-content a:hover {
+	background-color: grey;
+	 overflow-y: auto;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+h1 {
+    position:fixed;
+    top: 0%; 
+    left:30%;
+    transform: translate(50%,-50%);
+    text-transform:none;
+    font-family: verdana;
+    font-size: 2.5em;
+	color:#466FFF;
+	 text-shadow: 2px 2px #ff0000;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body{
+  padding: 40px;
+  background-color: #4268a5;  
+}
+
+p {
+  position:fixed;
+    top: 10%; 
+    left:37%;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+p {
+  animation: animated-text 5s steps(30, end) 1s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
+}
+</style>
+</head>
+<body>
+<div>
+<h1>
+TechHack!
+</h1></div>
+  <p>Learn Everything Here!.</p>
+<ul>
+<li>Hacking</li>
+   <li class="dropdown"><a herf="#content" class="dropbtn">Hacking</a>
+<div class="dropdown-content">
+<a herf="#1">Kali Linux</a>
+<a herf="#2">Tools</a>
+<a herf="#3">Skills</a>
+<a herf="#3">References</a>
+</div>
+</li>
+<li class="dropdown"><a herf="#Content" class="dropbtn">Penetration Testing</a>
+<div class="dropdown-content">
+<a herf="#1">Web App Penetration Testing</a>
+<a herf="#2">Network Penetration Testing</a>
+<a herf="#3">Social Engennering Tests</a>
+<a herf="#3">Client Side Test</a>
+<a herf="#3">Wireless Network Test</a>
+<a herf="#3">References</a>
+</div>
+</li>
+<li class="dropdown"><a herf="#Content" class="dropbtn">Web</a>
+<div class="dropdown-content">
+<a herf="#1">HTML</a>
+<a herf="#2">CSS</a>
+<a herf="#3">js(Java Script)</a>
+<a herf="#4">Python</a>
+<a herf="#5">PHP</a>
+<a herf="#6">SQL</a>
+<a herf="#7">PostgreSql</a>
+<a herf="#8">Asp.net</a>
+<a herf="#9">Bootstrap</a>
+<a herf="#10">XML</a>
+<a herf="#11">jQuery</a>
+<a herf="#12">Web Services</a>
+<a herf="#13">References</a>
+</div>
+</li>
+<li class="dropdown"><a herf="#Content" class="dropbtn">C/C++</a>
+<div class="dropdown-content">
+<a herf="#1">C</a>
+<a href="demo.html" class="next">C++</a>
+<a herf="#3">References</a>
+</div>
+</li>
+  <li class="dropdown"><a herf="#Content" class="dropbtn">Java</a>
+<div class="dropdown-content">
+<a herf="#1">Basics</a>
+<a herf="#2">Advanced</a>
+<a herf="#3">References</a>
+</div>
+</li>
+  <li class="dropdown"><a herf="#Content" class="dropbtn">Must Learn</a>
+  <div class="dropdown-content">
+<a herf="#1">Algorithms/Data Structures.</a>
+<a herf="#2">Networking</a>
+<a herf="#3">References</a>
+</div>
+</li>
+</ul>
+</body>
+</html>

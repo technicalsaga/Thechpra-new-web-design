@@ -1,0 +1,369 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: lightgrey;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:pointer;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.sidenav {
+  background-color: #0099cc;
+  padding: 15px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+.pagination {
+	display:inline-block;
+}
+.pagination a {
+	color:black;
+	float:left;
+	padding:8px 16px;
+	text-decoration:none;
+	transition:background-color .3s;
+	border: 1px solid #ddd;
+	margin:0 4px;
+	cursor:pointer;
+}
+.pagination a:hover:not(.active) {
+	background-color:#ddd;
+}
+img {
+	
+width: 10%;
+  border-radius: 30%;
+  }
+  table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 50px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="dehdwhi.png"><h1> Chapter:- Data Handling</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="#" class="next">IDE's For C++</a></li>
+      <li><a href="#" class="next">How to..</a></li>
+      <li><a href="#" class="next">Android Studio.</a></li>
+      <li><a href="#" class="next">References.</a></li>
+       <p><b>Video Courses</b></p>
+    <li><a href="#" class="next">In Hindi.</a></li>
+     <li><a href="#" class="next">In English.</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Fundamental Data Types</h1>
+    <p>Fundamental(Atomic) data types are those that are not composed of other Data Types.</p>
+    <p><b>int data type</b> "Data type for integers" Integers are the whole numbers which doesn't have any fractional part. In C++ Integers are represented by <i><strong>int</strong></i> data type.<br>
+    Any Identifier when declared in as <i>int</i> bears only Integers values.Integers can be negative(-) or positive(+) but whether integers can have fractional values, it depends upon the integer types.</p>
+    <p><b>char data types</b> "Data type for Character" Characters can store any member of the C++ implementation's basic character set. An Identifier declared as <i><strong>char</strong></i> becomes a character variable. </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<i>char</i> type is often said to be an integer type. It is said because letters, symbols etc are represented in memory by associated number codes.It is very easy to code numbers into binary. Thus, even letters and symbols are also associated numbers codes(eg:- ASCII code), because of which data type <i>char</i> is called another integer type.</p>
+     <div style="background-color: lightgrey;">
+     <div style="overflow-x:auto;">
+     <table>
+     <tr>
+     <th>&nbsp;&nbsp;Characters</th>
+     <th>&nbsp;&nbsp;ASCII Values</th>
+     </tr>
+     <tr>
+     <td>&nbsp;&nbsp;'0'-'9'</td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48-57</td>
+     </tr>
+     <tr>
+     <td>&nbsp;&nbsp;'A'-'Z'</td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;65-90</td>
+     </tr>
+     <tr>
+     <td>&nbsp;&nbsp;'a'-'z'</td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97-122</td>
+     <tr>
+     <td>&nbsp;other characters</td>
+     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0-255 excluding the above mentioned codes</td>
+     </tr>
+   </table>
+    </div>
+  </div>
+  <p><b>float Data Type</b> "Data Type for floating-point numbers" Any number having fractional part is a floating-point number. eg:- 45.76 is a floating -point number.<br>
+  The decimal point signals that it is a floating-point number not an integer. The number 23 is an integer but 23.0 is a floating-point number.Floating-point numbers can also be written in exponent notation. eg:- 14.567 would be written as 1.4567E01. An Identifier declared as<i><strong>float</strong></i> becomes a floating-point variable and can hold floating-point numbers.Floating point numbers Represents <i>real numbers</i>, which are used for measurable quantities and typically6 have a fractional part.</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floating-point numbers have two advantages over integers. First, they can represent values between the integers. Second, they can represent a much greater range of values.</p>
+  <p><b>double Data Type</b> "Data Type for double precision floating-point numbers" This Data Type is also used for handling floating-point numbers. But it is treated as a distinct data type because, it occupies twice as much memory as type float, and stores floating point numbers with larger range and precision.<br>
+  &nbsp;&nbsp;The type double is larger and slower than type float.</p>
+  <p><b>void Data Type</b> "Data Type for empty set of values and non-returning functions" The void specifies an empty set of values. It is used as the return type for functions that do not return a value. No object of type void may be discussed.</p>
+  <br>
+ <p style="font-size:20px;"><b>Data Type Modifiers</b></p>
+ <p>Except data type image<i><strong> void</strong></i>, the basic data types may have various modifiers preceding them. We use a <i>modifier</i> to alter the meaning of the base type to fit various situation more precisely. The Modifiers are as below:<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;signed<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;long<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short<br></p>
+ <p><strong>Note:</strong> Here, ANSI standards eliminates <i>long float</i> because it is nothing but double.</p>
+ <p>Memory of Computer is organised into bytes. A bytes consists of 8-bits, where a bit is the smallest unit of memory. 1 bit represents 2 unique combinations of binary numbers 0 and 1.<br>
+ That is  a byte 8 bits can represents 2<sup>8</sup>=256 unique number of combinations. 2-bytes represents  65536 unique number of combinations.</p>
+  <p style="font-size:20px;"><b>Integer Types</b></p>
+  <p><strong> short</strong> is short name for <strong>short int</strong> and <strong>long</strong> is short name for <strong>long int</strong>.</p>
+  
+  <div style="background-color: lightgrey;">
+     <div style="overflow-x:auto;">
+     <table>
+     <tr>
+     <th>type</th>
+     <th>Approximate Size(in bytes)</th>
+     <th>Minimal Range</th>
+     </tr>
+     <tr>
+     <td>short</td>
+     <td>2</td>
+     <td>-32,768 to 32,767</td>
+     </tr>
+     <tr>
+     <td>unsigned short</td>
+     <td>2</td>
+     <td>0 to 65,535</td>
+     </tr>
+     <tr>
+     <td>signed short</td>
+     <td>2</td>
+     <td>same as short</td>
+     </tr>
+     <tr>
+     <td>int</td>
+     <td>2</td>
+     <td>-32,768 to 32,767</td>
+     </tr>
+     <tr>
+     <td>unsigned int</td>
+     <td>2</td>
+     <td>0 to 65,535</td>
+     </tr>
+     <tr>
+     <td>signed int</td>
+     <td>2</td>
+     <td>same as int</td>
+     </tr>
+     <tr>
+     <td>long</td>
+     <td>4</td>
+     <td>-2,147,483,648 to 2,147,483,647</td>
+     </tr>
+       <td>Unsigned long</td>
+     <td>4</td>
+     <td>0 to 4,294,967,295</td>
+     </tr>
+       <td>signed long</td>
+     <td>4</td>
+     <td>same as long</td>
+     </tr>
+   </table>
+  </div></div>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;short, int and long are signed by default</p>
+    
+    <p style="font-size:20px;"><b>Character Types</b></p> 
+    <p>The <i><strong>char</strong></i> type is another integer type because inside memory it actually holds numbers eqivalent codes of character/symbols.</p>
+    <p>The <i><strong>char</strong></i> type can also be signed or unsigned and unlike int, char is neither sgned or unsigned by default.</p>
+      <div style="background-color: lightgrey;">
+     <div style="overflow-x:auto;">
+     <table>
+     <tr>
+     <th>type</th>
+     <th>Approximate Size(in bytes)</th>
+     <th>Minimal Range</th>
+     </tr>
+     <tr>
+     <td>char</td>
+     <td>1</td>
+     <td>-128 to 127</td>
+     </tr>
+     <tr>
+     <td>unsigned char</td>
+     <td>1</td>
+     <td>0 to 255</td>
+     </tr>
+     <tr>
+     <td>signed char</td>
+     <td>1</td>
+     <td>same as char</td>
+     </tr>
+     </table>
+     </div></div>
+     <p style="font-size:20px;"><b>Floating-point Types</b></p> 
+     <p>C++ has three floating-point types: <i><strong>float, double </strong></i>and <i><strong>long double.</strong></i></p>
+     <div style="background-color: lightgrey;">
+     <div style="overflow-x:auto;">
+     <table>
+     <tr>
+     <th>type</th>
+     <th>Approximate Size(in bytes)</th>
+     <th>Minimal Range</th>
+     <th>Digits of Precision</th>
+     </tr>
+     <tr>
+     <td>long</td>
+     <td>4</td>
+     <td>3.4*10<sup>-38</sup> to 3.4*10<sup>38</sup>-1</td>
+     <td>7</td>
+     </tr>
+     <tr>
+     <td>unsigned char</td>
+     <td>8</td>
+     <td>1.7*10<sup>-308</sup> to 1.7*10<sup>308</sup>-1</td>
+     <td>15</td>
+     </tr>
+     <tr>
+     <td>signed char</td>
+     <td>10</td>
+     <td>3.4*10<sup>-4932</sup> to 3.4*10<sup>4932</sup>-1</td>
+     <td>19</td>
+     </tr>
+     </table>
+     </div></div>
+     
+     
+      </div>
+
+ <div class="col-3 col-s-12">
+    <div class="sidenav">
+      <h2>Data Handling</h2>
+      <ul>
+       <li><a href="demo4.html">Introduction</a></li>
+       <li><a href="demo5.html">Fundamental Data Types</a></li>
+      <li><a href="demo6.html">Derived Data Types</a></li>
+      <li><a href="demo7.html">User Defined Data Types</a></li>
+      <li><a href="demo8.html">Variables</a></li>
+     </ul>
+    </div>
+  </div>
+ 
+ <div class="col-3 col-s-12">
+    <div class="sidenav">
+      <h2>C++ Tutorials</h2>
+      <ul>
+       <li><a href="demo4.html">Data Handling</a></li>
+       <li><a href="#">Concept of Procedural & Object Oriented Programming</a></li>
+      <li><a href="#">Flow of Control</a></li>
+      <li><a href="#">Function</a></li>
+      <li><a href="#">Array</a></li>
+      <li><a href="#">Pointers</a></li>
+     </ul>
+    </div>
+  </div>
+</div>
+<div class="pagination">
+<a href="1.htm" class="previous">&laquo; Previous</a>
+<a href="demo.html">1</a>
+<a href="demo2.html">2</a>
+<a href="demo3.html">3</a>
+<a href="demo4.html">4</a>
+<a href="demo5.html">5</a>
+<a href="demo6.html">6</a>
+<a href="demo7.html">7</a>
+<a href="demo8.html">8</a>
+<a href="#4" class="next">Next &raquo;</a></div>
+<div class="footer">
+<h1> TechHack</h1>
+  <p> Learn Everything Here!</p>
+  <p>Designed by: Priyanshu Raj Anand</p>
+</div>
+
+</body>
+</html>

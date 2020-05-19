@@ -1,0 +1,237 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: lightgrey;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:pointer;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+.pagination {
+	display:inline-block;
+}
+.pagination a {
+	color:black;
+	float:left;
+	padding:8px 16px;
+	text-decoration:none;
+	transition:background-color .3s;
+	border: 1px solid #ddd;
+	margin:0 4px;
+	cursor:pointer;
+}
+.pagination a:hover:not(.active) {
+	background-color:#ddd;
+}
+img {
+	
+width: 10%;
+  border-radius: 30%;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="dehdwhi.png"><h1> Chapter:- First C++ Program</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="#" class="next">IDE's For C++</a></li>
+      <li><a href="#" class="next">How to..</a></li>
+      <li><a href="#" class="next">Android Studio.</a></li>
+      <li><a href="#" class="next">References.</a></li>
+       <p><b>Video Courses</b></p>
+    <li><a href="#" class="next">In Hindi.</a></li>
+     <li><a href="#" class="next">In English.</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>First C++ Program</h1>
+   <p>In this guide we will write and understand the first program in C++ programming. We are writing a simple C++ program that prints “Hello World!” message. Lets see the program first and then we will discuss each and every part of it in detail.</p>
+   <p style="font-size:20px;"><b>In turbo C++ IDE: </b></p>
+   <div style="background-color: lightgrey;">
+   <p>&nbsp;&nbsp;/* Comments */<br><br>
+      &nbsp;&nbsp;#include &lt;iostream.h&gt;<br>
+      &nbsp;&nbsp;#include  &lt;conio.h&gt;<br>
+      &nbsp;&nbsp;&nbsp;void main()<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cout&lt;&lt;"Hello, World";<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getch();<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;}<br></p></div>
+      <p><b>Output:-</b></p>
+      <div style="background-color: lightgrey;">
+      <p>Output:- Hello, World</p>
+      </div>
+     <p><b>1. Comments:-</b>Comments as the names suggests are just a text written by programmer during code development. Comment doesn’t affect your program logic in any way, you can write whatever you want in comments but it should be related to the code and have some meaning so that when someone else look into your code, the person should understand what you did in the code by just reading your comment.</p>
+     <p><b>2. #include&lt;iostream.h&gt; & #include&lt;conio.h&gt;:-</b>This statements tells the compiler to include iostream file and conio file. This file contains pre defined input/output functions that we can use in our program.</p>
+     <p><b>3. void main():-</b>As the name suggests this is the main function of our program and the execution of program begins with this function, the void here is the return type which indicates to the compiler that this function will not return a value because void represents valueless. </p>
+     <p><b>4.  cout << “Hello, World”;:–</b>The cout object belongs to the iostream file and the purpose of this object is to display the content between double quotes as it is on the screen. This object can also display the value of variables on screen(don’t worry, we will see that in the coming tutorials).</p>
+     <p><b>5. getch(); :-</b>This statement holds screen to view output. This object belongs to conio file.</p>
+     <p style="font-size:20px;"><b>In other IDE's: </b></p>
+     <div style="background-color: lightgrey;">
+     <p>&nbsp;&nbsp;/*<br>
+&nbsp;&nbsp;* Multiple line<br>
+&nbsp;&nbsp;* comment<br>
+&nbsp;&nbsp;*/<br>
+&nbsp;&nbsp;#include&lt;iostream><br><br>
+
+&nbsp;&nbsp;//Single line comment<br>
+&nbsp;&nbsp;using namespace std;<br><br>
+
+&nbsp;&nbsp;//This is where the execution of program begins<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int main()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// displays Hello, World on screen<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout<<"Hello, World";<br><br>
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+</div>
+     <p><b>Output:-</b></p>
+      <div style="background-color: lightgrey;">
+      <p>Output:- Hello, World</p>
+      </div>
+ <p><b>1. Comments</b> You can see two types of comments in the above program<br><br>
+ <div style="background-color: lightgrey;">
+ &nbsp;&nbsp;// This is a single line comment<br>
+&nbsp;&nbsp;/* This is a multiple line comment<br>
+&nbsp;&nbsp;* suitable for long comments<br>
+&nbsp;&nbsp;*/<br></p>
+   </div>  
+  <p><b>2. using namespace std; :-</b> A namespace is like a region, where we have functions, variables etc and their scope is limited to that particular region. Here std is a namespace name, this tells the compiler to look into that particular region for all the variables, functions, etc. </p>
+  <p><b>3. int main() :-</b>As the name suggests this is the main function of our program and the execution of program begins with this function, the int here is the return type which indicates to the compiler that this function will return a integer value. That is the main reason we have a return 0 statement at the end of main function.</p>
+  <p><b>4. return 0; :-</b>This statement returns value 0 from the main() function which indicates that the execution of main function is successful. The value 1 represents failed execution.</p>
+   
+   
+      </div>
+
+ 
+ 
+ <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>C++ Tutorials</h2>
+      <ul>
+       <li><a href="demo4.html">Data Handling</a></li>
+       <li><a href="#">Concept of Procedural & Object Oriented Programming</a></li>
+      <li><a href="#">Flow of Control</a></li>
+      <li><a href="#">Function</a></li>
+      <li><a href="#">Array</a></li>
+      <li><a href="#">Pointers</a></li>
+     </ul>
+    </div>
+  </div>
+</div>
+<div class="pagination">
+<a href="1.htm" class="previous">&laquo; Previous</a>
+<a href="demo.html">1</a>
+<a href="demo2.html">2</a>
+<a href="demo3.html">3</a>
+<a href="demo4.html">4</a>
+<a href="demo5.html">5</a>
+<a href="demo6.html">6</a>
+<a href="demo7.html">7</a>
+<a href="demo8.html">8</a>
+<a href="#4" class="next">Next &raquo;</a></div>
+<div class="footer">
+<h1> TechHack</h1>
+  <p> Learn Everything Here!</p>
+  <p>Designed by: Priyanshu Raj Anand</p>
+</div>
+
+</body>
+</html>

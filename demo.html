@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: lightgrey;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:pointer;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+.pagination {
+	display:inline-block;
+}
+.pagination a {
+	color:black;
+	float:left;
+	padding:8px 16px;
+	text-decoration:none;
+	transition:background-color .3s;
+	border: 1px solid #ddd;
+	margin:0 4px;
+	cursor:pointer;
+}
+.pagination a:hover:not(.active) {
+	background-color:#ddd;
+}
+img {
+	
+width: 10%;
+  border-radius: 30%;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="dehdwhi.png"><h1> Chapter:- Getting Started with C++</h1>
+  <p><b>C++ :- C++ is a High Level Programming Language, used is softwares development.</b></p>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="#" class="next">IDE's For C++</a></li>
+      <li><a href="#" class="next">How to..</a></li>
+      <li><a href="#" class="next">Android Studio.</a></li>
+      <li><a href="#" class="next">References.</a></li>
+      <p><b>Video Courses</b></p>
+    <li><a href="#" class="next">In Hindi.</a></li>
+     <li><a href="#" class="next">In English.</a></li>
+    </ul>
+  </div>
+  
+  
+
+  <div class="col-6 col-s-9">
+    <h1>Intoduction</h1>
+    <p>The C++ programming language was developed at AT&T Bell laboratories in early 1980s by Bjarne Stroustrup. He found 'C' lacking for simultaneously and decided to extend the language by adding features from his favourite language Simula 67.</p>
+    <p>Simula 67 was one of the earliest OOP languages. Bjarne Stroustrup called it "C with classes" originally. The name C++ was coined by Rick Mascitti where"++" is the increment operator.
+     The maturation of C++ language is assested to by two recent events: (1) the formation of ANSI(American National Standard Institute) C++ Committe and, (2)  the publication of The Annotated C++ Reference Manual by Ellis and Stroustrup.</p>
+     <p>The major reason behind the success and popularity of C++is that i supports the object-oriented technology</p>
+     <p>One can easily judge the importance of C++ by reading this : <i>"Object-oriented Technology is regarded as the ultimate paradigm for the modelling of information, be that logic or data. The C++ has to fulfill this goal"</i></p>
+     <h1>C++ Character Set</h1>
+     <p>Character set is set of valid characters that a language can recognise. A character represents any letter, digit, or any other sign. The C++ has the following character set</p>
+     <p><b>Letters</b> A-Z, a-z</p>
+     <p><b>Digits</b> 0-9</p>
+     <p><b>Special Symbols</b> Space + - * / ^ \ () [] {} = != < > . '" $ , ; : % ! & ? _(underscore) # <= >= @</p>
+     <p><b>White Spaces</b> Blank Space, Horizontal tab(--->), carriage return(<_|), Newline, Form feed.</p>
+     <p><b>Other Characters</b> C++ can process any of the 256 ASCII characters as data or as literals.</p>
+     <h1>Tokens:-</h1>
+     <p>The smallest individual unit in a program is known as a token.</p>
+     <p>C++ has the following tokens:<br>
+     <p>1. Keywords<br>
+     <p>2. Identifiers<br>
+     <p>3. Literals<br>
+     <p>4. Puncuators<br>
+     <p>5. Operators</p>
+      
+       </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Procedural</h2>
+      <p>Procedural programming is a programming paradigm, derived from a structured programming, based on the concept of the procedure call.</p>
+      <h2>OOP</h2>
+      <p>Object-oriented programming paradigm based on the concept of "objects" which can contain data, in the form of fields, and code, in the form of  procedures.</p>
+      <h2>Objects</h2>
+      <p>Object is an identifiable entity with some characterstics and behaviour.</p>
+      <h2>Class</h2>
+      <p>A Class is a group of Objects that shares common properties and Relationships.</p>
+    </div>
+  </div>
+</div>
+<div class="pagination">
+<a href="1.htm" class="previous">&laquo; Previous</a>
+<a href="demo.html">1 </a>
+<a href="demo2.html">2 </a>
+<a href="demo3.html">3 </a>
+<a href="demo4.html">4 </a>
+<a href="demo5.html">5 </a>
+<a href="demo6.html">6</a>
+<a href="demo7.html">7</a>
+<a href="demo8.html">8</a>
+<a href="#4" class="next">Next &raquo;</a></div>
+<div class="footer">
+<h1> TechHack</h1>
+  <p> Learn Everything Here!</p>
+  <p>Designed by: Priyanshu Raj Anand</p>
+</div>
+
+</body>
+</html>

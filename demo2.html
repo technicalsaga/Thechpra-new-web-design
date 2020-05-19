@@ -1,0 +1,298 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: lightgrey;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor:pointer;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+.pagination {
+	display:inline-block;
+}
+.pagination a {
+	color:black;
+	float:left;
+	padding:8px 16px;
+	text-decoration:none;
+	transition:background-color .3s;
+	border: 1px solid #ddd;
+	margin:0 4px;
+	cursor:pointer;
+}
+.pagination a:hover:not(.active) {
+	background-color:#ddd;
+}
+img {
+	
+width: 10%;
+  border-radius: 30%;
+  }
+  table {
+  	border-collapse:collapse;
+  	border-spacing:10px;
+  	width:100%;
+  	border:1px solid #ddd;
+  }
+  th, td {
+  	text-align:left;
+  	padding:8px;
+  }
+  tr:nth-class(even){
+  	background-color:#f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="dehdwhi.png"><h1> Chapter:- Tokens</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li><a href="#" class="next">IDE's For C++</a></li>
+      <li><a href="#" class="next">How to..</a></li>
+      <li><a href="#" class="next">Android Studio.</a></li>
+      <li><a href="#" class="next">References.</a></li>
+      <p><b>Video Courses</b></p>
+    <li><a href="#" class="next">In Hindi.</a></li>
+     <li><a href="#" class="next">In English.</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+     <h1>Tokens:-</h1>
+     <p>The smallest individual unit in a program is known as a token.</p>
+     C++ has the following tokens:<br>
+     1. Keywords<br>
+     2. Identifiers<br>
+     3. Literals<br>
+     4. Puncuators<br>
+     5. Operators</p>
+     <p style="font-size:20px;"><b>1. Keywords</b></p>
+     <p>Keywords are the words that convey a special meaning to the language complier. These are reserved for special purpose and must not be used as normal identifier names.</p>
+     <p>The original C++(developed by Stroustrup) contains the following keywords:</p>
+     <p>asm &nbsp;&nbsp;&nbsp;auto &nbsp;&nbsp;&nbsp;break &nbsp;&nbsp;&nbsp;case &nbsp;&nbsp;&nbsp;catch &nbsp;&nbsp;&nbsp;char &nbsp;&nbsp;&nbsp;class &nbsp;&nbsp;&nbsp;const &nbsp;&nbsp;&nbsp;continue &nbsp;&nbsp;&nbsp;default &nbsp;&nbsp;&nbsp;delete &nbsp;&nbsp;&nbsp;do &nbsp;&nbsp;&nbsp;double &nbsp;&nbsp;&nbsp;else &nbsp;&nbsp;&nbsp;enum &nbsp;&nbsp;&nbsp;extern &nbsp;&nbsp;&nbsp;float &nbsp;&nbsp;&nbsp;for &nbsp;&nbsp;&nbsp;friend &nbsp;&nbsp;&nbsp;goto &nbsp;&nbsp;&nbsp;if &nbsp;&nbsp;&nbsp;inline &nbsp;&nbsp;&nbsp;integer &nbsp;&nbsp;&nbsp;long &nbsp;&nbsp;&nbsp;new &nbsp;&nbsp;&nbsp;operator &nbsp;&nbsp;&nbsp;private &nbsp;&nbsp;&nbsp;protected &nbsp;&nbsp;&nbsp;public &nbsp;&nbsp;&nbsp;register &nbsp;&nbsp;&nbsp;return &nbsp;&nbsp;&nbsp;short &nbsp;&nbsp;&nbsp;signed &nbsp;&nbsp;&nbsp;sizeof &nbsp;&nbsp;&nbsp;static &nbsp;&nbsp;&nbsp;struct &nbsp;&nbsp;&nbsp;switch &nbsp;&nbsp;&nbsp;template &nbsp;&nbsp;&nbsp;this &nbsp;&nbsp;&nbsp;throw &nbsp;&nbsp;&nbsp;try &nbsp;&nbsp;&nbsp;typedef &nbsp;&nbsp;&nbsp;union &nbsp;&nbsp;&nbsp;unsigned &nbsp;&nbsp;&nbsp;virtual &nbsp;&nbsp;&nbsp;void &nbsp;&nbsp;&nbsp;volatile &nbsp;&nbsp;&nbsp;while &nbsp;&nbsp;&nbsp;</p>
+     <p>In addition, identifiers containing a double underscore(_ _) are reserved for use by C++ implementations and standard libraries and should be avoided by users.</p>
+     <p style="font-size:20px;"><b>2. Identifiers</b></p>
+     <p>An identifier is an arbitrarily long sequence of letters and digits.<br><p>
+     <p><b>&nbsp;&nbsp;&nbsp;Rules for Assigning Identifiers:</b><br>
+    &nbsp;&nbsp;&nbsp; * It contains: (A-Z, a-z, 0-9, _).<br>
+     &nbsp;&nbsp;&nbsp; * All characters are significant.<br>
+   &nbsp;&nbsp;&nbsp;  * Identifiers are fundamental building blocks of a program.<br>
+    &nbsp;&nbsp;&nbsp; * First character must be letter; the underscore(_) also considered as letter.<br>
+   &nbsp;&nbsp;&nbsp;  * Do not contain any special character other than (_).<br><p>
+     <p style="font-size:20px;"><b>3. Literals</b></p>
+     <p>Literals are data items that never change their value during a program run.<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;It is also reffered to as constants.<br></p>
+     <p><b>&nbsp;&nbsp;&nbsp;Kinds of Literals:</b><br>
+     (i) integer-constant;&nbsp;&nbsp;&nbsp;(ii) character-constant;&nbsp;&nbsp;&nbsp;(iii) floating-constant;&nbsp;&nbsp;&nbsp;(iv) string-constant;&nbsp;&nbsp;&nbsp;<br>
+     </p><p><b><u>(i) Integer-constant:-</b></u> Integer constant are whole numbers without any fractional part.<br>
+    &nbsp;&nbsp;&nbsp; * Must contain at least one digit.<br>
+    &nbsp;&nbsp;&nbsp; * Do not contain any decimal point.<br>
+     &nbsp;&nbsp;&nbsp; * It may contain either(+)or(-) sign.<br>
+   &nbsp;&nbsp;&nbsp;  * Commas cannot appear in an integer constant.<br><br>
+     C++ allows three types of integers constant:<br>
+     (a) Decimal(base10);&nbsp;&nbsp;(b) Octal(base 8);&nbsp;&nbsp;(c) Hexadecimal(base 16);&nbsp;&nbsp;<br><br>
+     (a)<u>Decimal Integer Constant</u>: An integer constant consisting of a sequence of digits is taken to be decimal integer constant unless it begins with 0. eg:- 1234,41, +73, -13 are decimal integer constant.<br>
+     (b)<u>Octal Integer Constant</u>: A sequence of digits starting with 0 is taken to be octal integer. eg:- 8 will be written as 010 as octal integer(8<sub>10</sub>= 10<sub>8</sub>)<br>
+     (c)<u>Hexadecimal Integer Constant</u>: A sequence of digit precceded by 0x or 0X is taken to be an hexadecimal integer. eg:- 12 will be written as 0XC(as hexadecimal).<br>
+     <b><u>(ii) Character-constant:-</b></u> A character constant is single character enclosed in single quotes, as in 'a'.<br>
+     <strong>*</strong> Non-graphic characters can be represented by using escape sequence.<br><br>
+     <div style="overflow-x:auto;">
+     <table>
+     <tr>
+     <th>Escape Sequence</th>
+     <th>Non-graphic Character</th>
+     </tr>
+     <tr>
+     <td>\a</td>
+     <td>Audible bell(alert)</td>
+     </tr>
+     <tr>
+     <td>\b</td>
+     <td>Backspace</td>
+     </tr>
+     <tr>
+     <td>\f</td>
+     <td>Formfeed</td>
+     </tr>
+     <tr>
+     <td>\n</td>
+     <td>Newline or linefeed</td>
+     </tr>
+     <tr>
+     <td>\r</td>
+     <td>Carriage Return</td>
+     </tr>
+     <tr>
+     <td>\t</td>
+     <td>Horizontal tab</td>
+     </tr>
+     <tr>
+     <td>\v</td>
+     <td>Vertical tab</td>
+     </tr>
+     <tr>
+     <td>\\</td>
+     <td>Backslash</td>
+     </tr>
+     <tr>
+     <td>\'</td>
+     <td>Single quote</td>
+     </tr>
+     <tr>
+     <td>\"</td>
+     <td>Double quote</td>
+     </tr>
+     <tr>
+     <td>\?</td>
+     <td>Question mark</td>
+     </tr>
+     <tr>
+     <td>\On</td>
+     <td>Octal number (On reoresents the number in octal)</td>
+     </tr>
+     <tr>
+     <td>\xHn</td>
+     <td>Hexadecimal number (Hn represents the number in hexadecimal)</td>
+     </tr>
+     <tr>
+     <td>\0</td>
+     <td>Null</td>
+     </tr>
+     </table>
+     An escape sequence represents a single character<br><br></p>
+     <p><b><u>(iii) Floating Constant:-</b></u>It is also known as eal constants.<br><br>
+     Real constants are numbers having fractional part. These may be written in one of the two forms called fractional form or the exponent form.<br><br>
+      &nbsp;&nbsp;&nbsp;<strong>*</strong>A real Constant in fraction form consists of signed or unsigned digits including decimal point between digits. eg:- 2.0, 17.5, -13.0, -0.00654;<br>
+      <br>
+      &nbsp;&nbsp;&nbsp;<strong>*</strong>A real constant in exponent form consist of two part: mantissa and exponent.<br>
+      eg:- 6.8 is written as 0.68* 10<sup>1</sup> = 0.68 E01, where mantissa part is 0.68 and the exponent part is 1.<br> E01 represents 10<sup>1</sup>
+      eg:- 152E05, 1.52E07, etc...<br></p>
+      <b><u>(iv) String Literals:-</b></u>Multiple character constants are dealt with two ways in C++. <br><br>
+      If enclosed in single quotes, these are treated as character constants and if enclosed in double quotes, these are treated as string literals<br><br>
+      "A string literals is a sequence of characters surrounded by double quotes."<br><br>
+      Each string literal is added with a '\0'(null) terminating character.<br><br>
+      Thr string "abc" actually represented as "abc\0" in the memory. It's size is 4 character (including of terminator character.).<br><br>
+     <p style="font-size:20px;"><b>4. Punctuators</b></p>
+     <p> The following characters are used as punctuators (also known as separators) in C++: <br><br>
+     [] () {} ,  : ; * ... = # <br><br>
+     that enhances a program's readiability.</p>
+     <p><b>5. Operators</b></p>
+     <p> Tokens that trigger some computation or action when applied to variables and other objects is an expression.<br><br>
+     Input/Output (i/o) operators (<<  and >>), arithematic operators (+, -, *, /, %), increment/decrement operators (++, --), relational operators (==, !=, <,>,<=,>=), logical operators (&&, ||, !) and conditional operators (?:).</p>
+     </div></div>
+<div class="pagination">
+<a href="1.htm" class="previous">&laquo; Previous</a>
+<a href="demo.html">1 </a>
+<a href="demo2.html">2 </a> 
+<a href="demo3.html">3 </a>
+<a href="demo4.html">4 </a>
+<a href="demo5.html">5 </a>
+<a href="demo6.html">6 </a>
+<a href="demo7.html">7</a>
+<a href="demo8.html">8 </a>
+<a href="#" class="next">Next &raquo;</a>
+</div>
+<div class="footer">
+<h1> TechHack</h1>
+  <p> Learn Everything Here!</p>
+  <p>Designed by: Priyanshu Raj Anand</p>
+</div>
+
+</body>
+</html>
